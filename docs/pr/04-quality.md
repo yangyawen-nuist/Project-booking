@@ -8,6 +8,6 @@ The initial commit already contains Gradle Wrapper 8.10.2, two dependency lockfi
 
 Local validation uses `./gradlew clean build installDist --offline --no-daemon` with Java 17 and the existing dependency cache. The complete application has 10 tests, 87.26% line coverage (137/157), 94.44% branch coverage (51/54) and 0 unresolved Detekt findings. The earlier preparation recorded 87.25% line coverage before English source line wrapping; see `docs/VALIDATION.md`.
 
-PRs #1, #2 and #3 are merged. This fourth PR's CI run must pass before merging; its result is pending until GitHub executes it.
+All four PRs are merged. PR #4 merged as `68f9829`. Its [PR check](https://github.com/yangyawen-nuist/Project-booking/actions/runs/45942560381) and the [main build](https://github.com/yangyawen-nuist/Project-booking/actions/runs/45942936968) both completed successfully.
 
-The code, tests, configuration and documentation were prepared with AI assistance. The owner created and merged the first three platform PRs; `docs/CONTRIBUTIONS.md` records the division of work.
+The code, tests, configuration and documentation were prepared with AI assistance. The owner created and merged all four platform PRs; `docs/CONTRIBUTIONS.md` records the division of work.

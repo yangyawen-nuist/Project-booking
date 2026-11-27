@@ -86,9 +86,9 @@ Direct versions are explicit in `build.gradle.kts`, including picocli 4.7.6 and 
 
 ## Development workflow
 
-This repository uses `main` and four feature branches. [PR #1](https://github.com/yangyawen-nuist/Project-booking/pull/1) added the domain layer, [PR #2](https://github.com/yangyawen-nuist/Project-booking/pull/2) added persistence, and [PR #3](https://github.com/yangyawen-nuist/Project-booking/pull/3) added the CLI. All three are merged. `feature/quality` adds CI and documentation as the fourth PR; its remote build and merge are pending. See [WORKFLOW.md](docs/WORKFLOW.md) and [PR_GUIDE.md](docs/PR_GUIDE.md).
+This repository uses `main` and four feature branches. [PR #1](https://github.com/yangyawen-nuist/Project-booking/pull/1) added the domain layer, [PR #2](https://github.com/yangyawen-nuist/Project-booking/pull/2) added persistence, and [PR #3](https://github.com/yangyawen-nuist/Project-booking/pull/3) added the CLI. [PR #4](https://github.com/yangyawen-nuist/Project-booking/pull/4) added CI and documentation. All four are merged. The [PR check](https://github.com/yangyawen-nuist/Project-booking/actions/runs/45942560381) and [main build](https://github.com/yangyawen-nuist/Project-booking/actions/runs/45942936968) both passed. See [WORKFLOW.md](docs/WORKFLOW.md) and [PR_GUIDE.md](docs/PR_GUIDE.md).
 
-The code, tests and initial configuration were generated with AI assistance. The owner selected the topic, supplied requirements and Git identity, reviewed the proposed text, and created and merged the first three GitHub PRs. AI prepared local commits, ran the local checks and drafted documentation. The reflection below discusses recorded AI-assisted build failures; it does not claim an independent implementation. See [CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md).
+The code, tests and initial configuration were generated with AI assistance. The owner selected the topic, supplied requirements and Git identity, reviewed the proposed text, and created and merged all four GitHub PRs. AI prepared local commits, ran the local checks and drafted documentation. The reflection below discusses recorded AI-assisted build failures; it does not claim an independent implementation. See [CONTRIBUTIONS.md](docs/CONTRIBUTIONS.md).
 
 ## Reflection
 

@@ -1,4 +1,4 @@
-# Pull request record and next steps
+# Pull request record and submission evidence
 
 Repository: https://github.com/yangyawen-nuist/Project-booking
 
@@ -7,31 +7,18 @@ Repository: https://github.com/yangyawen-nuist/Project-booking
 | [#1](https://github.com/yangyawen-nuist/Project-booking/pull/1) | Equipment and reservation rules | b2219a4 | Merged |
 | [#2](https://github.com/yangyawen-nuist/Project-booking/pull/2) | JSON persistence | 058ec42 | Merged |
 | [#3](https://github.com/yangyawen-nuist/Project-booking/pull/3) | CLI commands and parsing | eacf9e1 | Merged |
-| Fourth PR | CI and documentation | Pending | feature/quality prepared locally |
+| [#4](https://github.com/yangyawen-nuist/Project-booking/pull/4) | CI and documentation | 68f9829 | Merged |
 
-The owner created and merged the first three PRs in GitHub. Each branch was based on the preceding merged `main`. All repository commit messages, source messages and documentation are in English.
+The owner created and merged all four PRs in GitHub. Each feature branch was created from the preceding merged `main`. Preserve these branches and the merge history for the assignment.
 
-## Complete the fourth PR
+## Successful remote builds
 
-From the repository directory, push the prepared branch:
+- [PR #4 validation](https://github.com/yangyawen-nuist/Project-booking/actions/runs/45942560381): completed, success.
+- [Main build after PR #4](https://github.com/yangyawen-nuist/Project-booking/actions/runs/45942936968): completed, success; commit `68f9829432a5d6731c8598cd4c8f421227c91fef`.
 
-```bash
-git push -u origin feature/quality
-```
+These outcomes were checked through the GitHub Actions API. The workflow uses Ubuntu and Java 17. Download `quality-reports` from the Artifacts section of the main run to retain its test, coverage and Detekt reports.
 
-If Windows Git reports a TLS backend error, use this one-command override:
-
-```powershell
-git -c http.sslBackend=openssl push -u origin feature/quality
-```
-
-Open https://github.com/yangyawen-nuist/Project-booking/compare/main...feature/quality?expand=1 and create a PR into `main`. Use the title and description in `docs/pr/04-quality.md`, and include actual local build results.
-
-The PR installs the Build workflow. Open its Checks tab and wait for `verify` to pass. If it fails, read the failed step, repair the branch and push again before merging. After a successful check, select Merge pull request and Confirm merge. Keep the feature branch.
-
-After merging, confirm that the push build on `main` also succeeds. Download the `quality-reports` artifact from the Actions run and save the fourth PR URL and Actions run URL with the assignment evidence. Update this table with the actual fourth PR and merge commit after completion.
-
-## Clone and verify the final repository
+## Verify a fresh clone
 
 ```bash
 git clone https://github.com/yangyawen-nuist/Project-booking.git
@@ -41,4 +28,13 @@ cd Project-booking
 
 Use `.\gradlew.bat build` on Windows. The Wrapper executable bit is recorded in Git. First-time dependency downloads need network access; local preparation used the existing Gradle cache.
 
-The four files in `docs/pr/` are descriptions for their corresponding feature changes. Historical local results are labeled in `VALIDATION.md`; fresh GitHub results must come from the actual Actions run.
+## Final submission checklist
+
+- Repository URL and the four merged PR URLs above.
+- Successful main Actions run URL and its `quality-reports` artifact.
+- README, `VALIDATION.md` and `CONTRIBUTIONS.md`.
+- Optional screenshots showing PR merges and successful checks.
+
+Branch protection and peer review remain optional setup tasks unless the course requires them. To require CI on future changes, protect `main`, disallow force pushes and require the `verify` check. A peer-review requirement needs another reviewer; the owner cannot approve their own PR.
+
+The files in `docs/pr/` preserve descriptions of the four feature changes. Original preparation failures and historical coverage figures are documented separately in `VALIDATION.md`.

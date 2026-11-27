@@ -49,4 +49,4 @@ During that preparation Gradle rejected dependency locking combined with `failOn
 
 ## Remote checks
 
-PRs #1, #2 and #3 are merged and used local build results. GitHub CI is added by feature/quality. Its PR and main-branch Actions runs have not yet executed. Before final submission, record their actual URLs and outcomes; the workflow uploads `build/reports/` as the `quality-reports` artifact.
+All four PRs are merged. PRs #1, #2 and #3 used local build results. PR #4 installed GitHub CI and merged as `68f9829`. GitHub Actions API returned `status: completed` and `conclusion: success` for both the [PR run](https://github.com/yangyawen-nuist/Project-booking/actions/runs/45942560381) and the [main push run](https://github.com/yangyawen-nuist/Project-booking/actions/runs/45942936968). The main run built commit `68f9829432a5d6731c8598cd4c8f421227c91fef` on Ubuntu with Java 17. Each workflow uploads `build/reports/` as the `quality-reports` artifact. Download the artifact from the linked run for remote test, coverage and analysis reports.
