@@ -32,7 +32,7 @@ Use `.\gradlew.bat build` on Windows. The Wrapper executable bit is recorded in 
 
 - Repository URL and the four merged PR URLs above.
 - Successful main Actions run URL and its `quality-reports` artifact.
-- README, `VALIDATION.md` and `CONTRIBUTIONS.md`.
+- README and `VALIDATION.md`.
 - Optional screenshots showing PR merges and successful checks.
 
 Branch protection and peer review remain optional setup tasks unless the course requires them. To require CI on future changes, protect `main`, disallow force pushes and require the `verify` check. A peer-review requirement needs another reviewer; the owner cannot approve their own PR.

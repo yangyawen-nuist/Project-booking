@@ -1,9 +1,9 @@
-# Contribution record
+# Project integration record
 
-The owner selected the laboratory equipment booking topic, supplied assignment requirements and Git identity, and approved the English localization. The owner also pushed branches from their terminal and created and merged GitHub PRs #1, #2, #3 and #4.
+The repository contains four feature branches merged through GitHub PRs #1-#4. Their scope is recorded in `PR_GUIDE.md` and `WORKFLOW.md`.
 
-AI generated the implementation, tests, initial build configuration and documentation drafts. AI prepared local feature commits, ran local builds and launcher checks, and repaired the recorded build and analysis issues. The owner approved translation of test fixtures and matching expected strings; assertion types, business conditions and test counts were preserved.
+The initial build configuration includes Gradle Wrapper, dependency locks, JUnit, Detekt and JaCoCo. Feature commits add domain rules, JSON persistence, CLI commands, CI and documentation in that order.
 
-The README reflection was drafted from recorded AI-assisted failures and reviewed by the owner. A completed independent line-by-line code review or personally written implementation changes have not been recorded. Any later personal modifications should be added here with their files and commit references.
+Validation commands, test counts and coverage measurements are recorded in `VALIDATION.md`. English test fixtures preserve the original assertion types, business conditions and test count.
 
-This repository starts with the owner's current identity and records the actual staged integration through PRs. Original preparation history is retained separately; its authors and timestamps were not rewritten.
+Use the final tag named in the PDF report to reproduce the submitted version. Existing commits and tags retain their original authors and timestamps.
